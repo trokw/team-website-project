@@ -1,32 +1,80 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/main.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Мой сайт</title>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Website Project</title>
+  
+  <!-- CSS файлы -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <header>
-    <h2>Мой сайт</h2>
-    <nav>
-        <a href="#">Главная</a>
-        <a href="#">О нас</a>
-        <a href="#">Контакты</a>
-    </nav>
-</header>
-<main>
-    <section>
-        <h2>О проекте</h2>
-        <p>Это мой первый сайт, созданный с помощью Git.</p>
+
+  <!-- 🔹 Header бөлімі -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Team Website</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Басты бет</a></li>
+          <li><a href="#about">Біз туралы</a></li>
+          <li><a href="#contact">Байланыс</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔹 Негізгі бөлім -->
+  <main class="site-main">
+    <section id="home" class="home-section">
+      <div class="container">
+        <h2>Біздің веб-жобаға қош келдіңіз!</h2>
+        <p>
+          Бұл сайт командалық жұмыс арқылы Git және GitHub жүйесінде әзірленді.
+          Әрбір топ мүшесі өз бөліміне жауапты болды — HTML, CSS және JavaScript.
+        </p>
+        <button id="infoBtn" class="btn">Толығырақ білу</button>
+      </div>
     </section>
-</main><footer>
-    <p>© 2025 Куаныш. Все права защищены.</p>
-</footer>
 
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>Біз туралы</h2>
+        <p>
+          Біздің командамыз үш студенттен тұрады. Біз веб-технологияларды меңгеріп, 
+          командалық жұмыс жасауға машықтанып жатырмыз.
+        </p>
+      </div>
+    </section>
 
-    <h1>Добро пожаловать на мой сайт!</h1>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Байланыс</h2>
+        <form id="contactForm">
+          <label for="name">Атыңыз:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Электронды пошта:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Хабарлама:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Жіберу</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🔹 Footer бөлімі -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Team Website Project. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+
+  <!-- JS файлы -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
 
