@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="kk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedLife — Денсаулық әлемі</title>
+  <title>MedLife — Денсаулық пен күтім</title>
   <link rel="stylesheet" href="feature.css" />
 </head>
 <body>
+  <!-- 🔹 Header -->
   <header class="site-header">
     <div class="container">
       <h1 class="logo">MedLife</h1>
       <nav class="nav">
         <ul>
-          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="index.html" class="active">Басты бет</a></li>
           <li><a href="medicine.html">Медицина</a></li>
           <li><a href="contact.html">Байланыс</a></li>
         </ul>
@@ -20,18 +21,63 @@
     </div>
   </header>
 
+  <!-- 🔹 Главный блок -->
   <section class="home-section">
     <div class="container">
-      <h2>Медицина әлеміне қош келдіңіз!</h2>  
-      <p>Бұл сайт денсаулық пен дұрыс өмір салтына арналған ақпараттық жоба.</p>
-      <button onclick="location.href='medicine.html'" class="btn">Медицина бетіне өту</button>
+      <h2>Денсаулығыңыз — біздің басты құндылығымыз</h2>
+      <p>
+        MedLife — сенімді медициналық серіктесіңіз. Біз сізге салауатты өмір салтын ұстануға,
+        аурулардың алдын алуға және кәсіби кеңестер алуға көмектесеміз.
+      </p>
+      <button class="btn" onclick="location.href='medicine.html'">Медицина бетіне өту</button>
     </div>
   </section>
 
+  <!-- 🔹 Артықшылықтар -->
+  <section class="about-section">
+    <div class="container">
+      <h2>Неліктен MedLife?</h2>
+      <div class="benefits" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:30px;">
+        <div class="card" style="background:#f0fdf9; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+          <h3>🩺 Кәсіби кеңес</h3>
+          <p>Тәжірибелі дәрігерлер мен медициналық мамандардан дәл және пайдалы ақпарат алыңыз.</p>
+        </div>
+        <div class="card" style="background:#f0fdf9; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+          <h3>💊 Дұрыс күтім</h3>
+          <p>Ағзаңызды күтуге арналған тиімді тәсілдер мен пайдалы кеңестер.</p>
+        </div>
+        <div class="card" style="background:#f0fdf9; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+          <h3>🌿 Табиғи әдістер</h3>
+          <p>Денсаулықты нығайту үшін табиғи емдеу мен профилактикалық тәсілдер.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Қысқаша галерея -->
+  <section class="about-section" style="background:#eef4f3;">
+    <div class="container">
+      <h2>Біздің миссиямыз</h2>
+      <p style="max-width:700px; margin:0 auto;">
+        Біз медициналық ақпаратты қарапайым және сенімді етуге тырысамыз.  
+        Әр адам өз денсаулығын бақылап, сау болуға құқылы!
+      </p>
+
+      <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:30px;">
+        <img src="https://cdn.pixabay.com/photo/2016/11/23/15/36/doctor-1852880_960_720.jpg" alt="Дәрігер" style="width:100%; border-radius:10px;">
+        <img src="https://cdn.pixabay.com/photo/2017/08/06/07/38/heart-2598205_960_720.jpg" alt="Жүрек" style="width:100%; border-radius:10px;">
+        <img src="https://cdn.pixabay.com/photo/2018/03/19/19/03/medicine-3245210_960_720.jpg" alt="Медицина" style="width:100%; border-radius:10px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2025 MedLife. Барлық құқықтар қорғалған.</p>
     </div>
   </footer>
+
+  <script src="feature.js"></script>
 </body>
 </html>
