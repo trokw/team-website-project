@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team Website Project</title>
-  
-  <!-- CSS файлы -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Медицина сайты</title>
+  <link rel="stylesheet" href="feature.css"/>
 </head>
 <body>
 
-  <!-- 🔹 Header бөлімі -->
+  <!-- 🔹 Header -->
   <header class="site-header">
     <div class="container">
-      <h1 class="logo">Team Website</h1>
+      <h1 class="logo">MedLife</h1>
       <nav class="nav">
         <ul>
           <li><a href="#home">Басты бет</a></li>
           <li><a href="#about">Біз туралы</a></li>
+          <li><a href="#medicine">Медицина</a></li>
           <li><a href="#contact">Байланыс</a></li>
         </ul>
       </nav>
@@ -28,12 +27,12 @@
   <main class="site-main">
     <section id="home" class="home-section">
       <div class="container">
-        <h2>Біздің веб-жобаға қош келдіңіз!</h2>
+        <h2>Медицина әлеміне қош келдіңіз!</h2>  
         <p>
-          Бұл сайт командалық жұмыс арқылы Git және GitHub жүйесінде әзірленді.
-          Әрбір топ мүшесі өз бөліміне жауапты болды — HTML, CSS және JavaScript.
+          Бұл сайт — денсаулық пен медицина тақырыптарына арналған білім көзі.
+          Мұнда сіз аурулардың алдын алу, дұрыс тамақтану және салауатты өмір салты туралы біле аласыз.
         </p>
-        <button id="infoBtn" class="btn">Толығырақ білу</button>
+        <button id="infoBtn" class="btn">Медицина бетіне өту</button>
       </div>
     </section>
 
@@ -41,8 +40,21 @@
       <div class="container">
         <h2>Біз туралы</h2>
         <p>
-          Біздің командамыз үш студенттен тұрады. Біз веб-технологияларды меңгеріп, 
-          командалық жұмыс жасауға машықтанып жатырмыз.
+          Біздің мақсатымыз — медициналық ақпаратты қарапайым тілмен жеткізу.
+          Командамыз дәрігерлер мен студенттерден құралған.
+        </p>
+      </div>
+    </section>
+
+    <section id="medicine" class="about-section" style="display:none;">
+      <div class="container">
+        <h2>Медицина бөлімі</h2>
+        <p>
+          🩺 Бұл бөлімде сіз түрлі медициналық тақырыптармен таныса аласыз:  
+          <br>• Жүрек және қан айналым жүйесі  
+          <br>• Иммунитетті күшейту жолдары  
+          <br>• Алғашқы көмек көрсету ережелері  
+          <br>• Дұрыс тамақтану мен спорттың пайдасы
         </p>
       </div>
     </section>
@@ -66,15 +78,14 @@
     </section>
   </main>
 
-  <!-- 🔹 Footer бөлімі -->
+  <!-- 🔹 Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Team Website Project. Барлық құқықтар қорғалған.</p>
+      <p>&copy; 2025 MedLife. Барлық құқықтар қорғалған.</p>
     </div>
   </footer>
 
-  <!-- JS файлы -->
-  <script src="assets/js/main.js"></script>
+  <!-- JS -->
+  <script src="feature.js"></script>
 </body>
 </html>
-
