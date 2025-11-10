@@ -221,3 +221,92 @@ body {
     padding: 12px 24px;
   }
 }
+/* ===========================
+   CONTACT FORM (стиль Айдар)
+=========================== */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff, #f1fcf9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-4px);
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  color: #00796b;
+  margin-bottom: 8px;
+  font-size: 1.05em;
+}
+
+.contact-form label span {
+  margin-right: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1em;
+  border: 2px solid #d7efea;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background-color: #fcfdfd;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00a884;
+  background-color: #fafffe;
+  box-shadow: 0 0 8px rgba(0, 168, 132, 0.2);
+  outline: none;
+}
+
+.btn-contact {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00a884, #00c4a3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(0, 168, 132, 0.3);
+}
+
+.btn-contact:hover {
+  background: linear-gradient(90deg, #00c4a3, #00a884);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 168, 132, 0.4);
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 25px;
+  }
+
+  .btn-contact {
+    font-size: 1em;
+  }
+}
+
+
